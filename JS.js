@@ -38,3 +38,4 @@ burger.addEventListener('click', () => {
         link.classList.toggle('nav-link-open');
     })
 });
+
