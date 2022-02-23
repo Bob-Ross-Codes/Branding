@@ -4,6 +4,10 @@
     cursor: none;
 }
 
+.frontpage-section{
+  height: 90vh;
+}
+
 .hero-img{
     width: 100%;
     height: auto;
@@ -14,7 +18,7 @@
   top: 0;
   bottom: 0;
   z-index: -2;
-  margin-top: 8vh;
+  margin-top: 6vh;
   margin-right: auto;
   margin-left: auto;
 z-index: -10;
@@ -101,15 +105,18 @@ header h1{
 
 
 header{
-  margin-top: 3vh;
+  margin-top: 1vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: 8vw;
+  padding-left: 8vw;
 }
 
 
 .burger {
   z-index: 1; 
+  
 }
 
 .burger-svg{
@@ -230,7 +237,7 @@ header{
   width: 30px;
   height: 50px;
   margin-left: -20px;
-  top: 93%;
+  top: 95%;
   margin-top: -35px;
   box-shadow: inset 0 0 0 2px rgb(75, 75, 75);
   border-radius: 25px;
@@ -255,4 +262,27 @@ header{
 @keyframes scroll{
 0% {opacity: 1; top: 8px;}
 100% {opacity: 0; top: 25px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*portfolie section*/
+
+.portfolie-section{
+  background-color: #A5C7D3;
+}
+
+.portfolie-section{
+
 }
