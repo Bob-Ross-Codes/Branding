@@ -3,20 +3,20 @@ let navLinks = document.querySelectorAll('.nav-links li')
 
 window.addEventListener('mousemove', cursor)
 
-//vi tag vores x og y værdier fra vores addeventlistener og bruger dem til at definere hvor vores div skal være på siden
+//vi tag vores x og y veardier fra vores addeventlistener og bruger dem til at definere hvor vores div skal veare paa siden
 function cursor(e) {
     mouseCusor.style.top = e.pageY + 'px';
     mouseCusor.style.left = e.pageX + 'px';
 }
 
 //hover effekt 
-//vi tilføjer linkgrow class når vi hovere over link element
+//vi tilfojer linkgrow class naar vi hovere over link element
 navLinks.forEach(link => {
     link.addEventListener('mouseover', () => {
         mouseCusor.classList.add("linkgrow");
         link.classList.add('hovered-link');
     });
-    //vi fjerner linkgrow når musen ikke hovere over link element
+    //vi fjerner linkgrow naar musen ikke hovere over link element
     link.addEventListener('mouseleave', () => {
         mouseCusor.classList.remove("linkgrow");
         link.classList.remove('hovered-link');
@@ -39,3 +39,24 @@ burger.addEventListener('click', () => {
     })
 });
 
+
+
+
+
+
+
+$('.tabgroup > div').hide();
+$('.tabgroup > div:first-of-type').show();
+$('.tabs a').click(function(e){
+  e.preventDefault();
+    var $this = $(this),
+        tabgroup = '#'+$this.parents('.tabs').data('tabgroup'),
+        others = $this.closest('li').siblings().children('a'),
+        target = $this.attr('href');
+    others.removeClass('active');
+    $this.addClass('active');
+    $(tabgroup).children('div').hide();
+    $(target).show();
+  
+})
+    
