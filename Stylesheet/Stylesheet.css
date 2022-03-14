@@ -3,10 +3,11 @@
 
 *{
     cursor: none;
+    margin: 0%;
 }
 
 .frontpage-section{
-  height: 90vh;
+  height: 84.5vh;
 }
 
 .hero-img{
@@ -19,20 +20,20 @@
   top: 0;
   bottom: 0;
   z-index: -2;
-  margin-top: 6vh;
-  margin-right: auto;
-  margin-left: auto;
+  margin-top: 5vh;
+  
 z-index: -10;
      }
 
 header h1{
     font-family: 'Bodoni Moda', serif;
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
     margin: 0%;
-    
+    letter-spacing: 40px;
     color: rgb(48, 48, 48);
     z-index: -3;
+    margin-left: 50px;
 }
 
 
@@ -106,7 +107,7 @@ header h1{
 
 
 header{
-  margin-top: 1vh;
+  margin-top: 2vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -276,16 +277,23 @@ header{
 /*sky*/
 .sky-venstre{
   position: absolute;
-  z-index: 1000;
   top: 63vh;
-  right: 40vw;
+  right: 50vw;
+  
 }
 
 .sky-hojre{
   position: absolute;
-  z-index: 1000;
   top: 62vh;
-  left: 38vw;
+  left: 50vw;
+  
+}
+
+.sky{
+  top: 50vh;
+  margin: 0%;
+  position: absolute;
+  width: 100%;
 }
 
 
@@ -317,6 +325,11 @@ font-size: 7vw;
 font-family: 'Mohave', sans-serif;
 text-transform: uppercase;
 margin: 0%;
+z-index: 1000;
+}
+
+.portfolie-section h1:hover{
+color: aqua;
 }
 
 
